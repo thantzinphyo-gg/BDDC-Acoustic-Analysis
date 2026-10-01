@@ -1,19 +1,14 @@
 # Burmese Daily Dialogue Corpus (BDDC) — Acoustic Analysis
 
-[![Hugging Face Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Open--Burmese--Speech-yellow)](https://huggingface.co/datasets/thantzinphyo-gg/Open-Burmese-Speech)
-[![License: Research Only](https://img.shields.io/badge/License-Research--Only-blue.svg)](LICENSE)
-[![Python: 3.10+](https://img.shields.io/badge/Python-3.10%2B-green.svg)](https://www.python.org/)
-[![Reproducible: 100%](https://img.shields.io/badge/Reproducibility-Verified-success.svg)](bddc_acoustic_analysis.ipynb)
-
 A comprehensive, publication-grade acoustic and prosodic evaluation of the **Burmese Daily Dialogue Corpus (BDDC)**. This study empirically examines the acoustic separability and character divergence of the **13 synthetic Burmese speakers** across **24,560 audio utterances (~22 hours)**.
 
 ---
 
-## 📦 Dataset Access
+## Dataset Access
 
 The raw audio files (16 kHz, Mono, 16-bit PCM) and train/validation/test splits are officially hosted on Hugging Face:
 
-👉 **[Hugging Face Datasets: thantzinphyo-gg/Open-Burmese-Speech](https://huggingface.co/datasets/thantzinphyo-gg/Open-Burmese-Speech)**
+**[Hugging Face Datasets: thantzinphyo-gg/Open-Burmese-Speech](https://huggingface.co/datasets/thantzinphyo/Burmese-Daily-Dialogue-Corpus))**
 
 ```python
 from datasets import load_dataset
@@ -25,7 +20,7 @@ print(dataset)
 
 ---
 
-## 🔬 Key Empirical Findings
+## Key Empirical Findings
 
 1. **Acoustic Separability:** Non-parametric Kruskal-Wallis testing confirms that fundamental frequency ($F_0$) differences across the 13 speakers are statistically significant ($H = 18,194.6, p < 10^{-300}$) with an exceptionally large effect size ($\boldsymbol{\eta^2 = 0.7407}$), demonstrating that **74.1% of pitch variance** is directly governed by speaker identity.
 2. **Beyond Simple Pitch Shifting:** Speakers within identical pitch registers (e.g., Piya at $139.5\text{ Hz}$ vs. Suta at $138.4\text{ Hz}$ vs. Tara at $134.9\text{ Hz}$) exhibit distinct spectral envelopes in MFCC space and deep neural embeddings, ruling out uniform pitch modulation of a single source voice.
@@ -34,7 +29,7 @@ print(dataset)
 
 ---
 
-## 📊 Summary Tables
+## Summary Tables
 
 ### Table 1: Comprehensive Speaker Acoustic Profiles
 
@@ -82,7 +77,7 @@ The multi-view acoustic distance integrates **Voice Identity** (ECAPA-TDNN $35\%
 
 ---
 
-## 📈 Visual Gallery
+## Visual Gallery
 
 ### Figure 1: Fundamental Frequency ($F_0$) Distribution
 ![Figure 1: F0 by Speaker](figures/f0_by_speaker.png)
@@ -113,7 +108,7 @@ The multi-view acoustic distance integrates **Voice Identity** (ECAPA-TDNN $35\%
 
 ---
 
-## 🚀 Reproducibility
+## Reproducibility
 
 ### Installation
 ```bash
@@ -135,16 +130,23 @@ jupyter notebook bddc_acoustic_analysis.ipynb
 
 ---
 
-## 📝 Citation
+## Citation
 
 If you use BDDC or this acoustic analysis in your research, please cite:
 
 ```bibtex
-@misc{burmese_daily_dialogue_corpus,
-  title        = {Burmese Daily Dialogue Corpus (BDDC): Acoustic Analysis and Speaker Evaluation},
+
+@misc{bddc_corpus_2026,
   author       = {Thant Zin Phyo},
+  title        = {Burmese Daily Dialogue Corpus (BDDC)},
   year         = {2026},
-  howpublished = {\url{https://github.com/thantzinphyo-gg/BDDC-Acoustic-Analysis}},
-  note         = {Dataset available at Hugging Face Datasets: thantzinphyo-gg/Open-Burmese-Speech}
+  publisher    = {Hugging Face},
+  howpublished = {\url{https://huggingface.co/datasets/thantzinphyo/Burmese-Daily-Dialogue-Corpus}}
 }
 ```
+
+## Author & Contact
+
+* **Author:** Thant Zin Phyo
+* **Hugging Face:** [@thantzinphyo](https://huggingface.co/thantzinphyo)
+* **GitHub:** [@thantzinphyo-gg](https://github.com/thantzinphyo-gg)
