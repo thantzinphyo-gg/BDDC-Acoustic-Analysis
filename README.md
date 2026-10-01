@@ -1,14 +1,19 @@
-# Burmese Daily Dialogue Corpus (BDDC) — Acoustic Analysis
+### 🎙️ Burmese Daily Dialogue Corpus (BDDC) — Acoustic Analysis
+
+[![Hugging Face Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Open--Burmese--Speech-yellow)](https://huggingface.co/datasets/thantzinphyo-gg/Open-Burmese-Speech)
+[![License: Research Only](https://img.shields.io/badge/License-Research--Only-blue.svg)](LICENSE)
+[![Python: 3.10+](https://img.shields.io/badge/Python-3.10%2B-green.svg)](https://www.python.org/)
+[![Reproducible](https://img.shields.io/badge/Reproducibility-Verified-success.svg)](bddc_acoustic_analysis.ipynb)
 
 A comprehensive, publication-grade acoustic and prosodic evaluation of the **Burmese Daily Dialogue Corpus (BDDC)**. This study empirically examines the acoustic separability and character divergence of the **13 synthetic Burmese speakers** across **24,560 audio utterances (~22 hours)**.
 
 ---
 
-## Dataset Access
+## 📦 Dataset Access
 
 The raw audio files (16 kHz, Mono, 16-bit PCM) and train/validation/test splits are officially hosted on Hugging Face:
 
-**[Hugging Face Datasets: thantzinphyo-gg/Open-Burmese-Speech](https://huggingface.co/datasets/thantzinphyo/Burmese-Daily-Dialogue-Corpus))**
+👉 **[Hugging Face Datasets: thantzinphyo-gg/Open-Burmese-Speech](https://huggingface.co/datasets/thantzinphyo-gg/Open-Burmese-Speech)**
 
 ```python
 from datasets import load_dataset
