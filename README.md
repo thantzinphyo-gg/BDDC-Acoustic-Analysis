@@ -22,10 +22,10 @@ print(dataset)
 
 ### Key Empirical Findings
 
-1. **Acoustic Separability:** Non-parametric Kruskal-Wallis testing confirms that fundamental frequency ($F_0$) differences across the 13 speakers are statistically significant ($H = 18,194.6, p < 10^{-300}$) with an exceptionally large effect size ($\boldsymbol{\eta^2 = 0.7407}$), demonstrating that **74.1% of pitch variance** is directly governed by speaker identity.
-2. **Beyond Simple Pitch Shifting:** Speakers within identical pitch registers (e.g., Piya at $139.5\text{ Hz}$ vs. Suta at $138.4\text{ Hz}$ vs. Tara at $134.9\text{ Hz}$) exhibit distinct spectral envelopes in MFCC space and deep neural embeddings, ruling out uniform pitch modulation of a single source voice.
-3. **Independent Speaking Styles & Prosody:** Delivery tempo spans from deliberate, measured speech (**$4.55\text{ syll/s}$** for Pasada) to brisk conversational pace (**$5.88\text{ syll/s}$** for Piya) with substantial effect size ($\boldsymbol{\eta^2 = 0.3779}$).
-4. **Generalization Value:** Held-out zero-shot test speakers (**Gita** and **Nanda**) populate distinct regions in acoustic space, confirming their suitability for unseen speaker robustness evaluation in ASR and TTS tasks.
+1. **AAcoustic Separability:** Non-parametric Kruskal–Wallis testing indicates significant differences in fundamental frequency ($F_0$) across the 13 synthetic speakers ($H = 18,194.6$, $p < 10^{-300}$). The estimated Kruskal–Wallis epsilon-squared effect size ($\varepsilon^2 = 0.7407$) indicates a large speaker-associated effect on the observed $F_0$ distributions..
+2. **Beyond Simple Pitch Shifting:** Speakers with similar median pitch values (e.g., Piya: 139.5 Hz, Suta: 138.4 Hz, and Tara: 134.9 Hz) nevertheless exhibit differences in MFCC-based spectral characteristics and pretrained ECAPA-TDNN embedding space. These results provide evidence that the observed speaker variation extends beyond differences in fundamental frequency alone.
+3. **Independent Speaking Styles & Prosody:** Speaking rate varies across the synthetic speakers, ranging from 4.55 syllables/s for Pasada to 5.88 syllables/s for Piya. The estimated effect size ($\varepsilon^2 = 0.3779$) indicates substantial between-speaker differences in the observed speaking-rate distributions.
+4. **Generalization Value:** The held-out test speakers, Gita and Nanda, occupy distinct regions of the analyzed acoustic feature spaces. This provides evidence that the test speakers introduce additional acoustic variation and can be used to evaluate speaker generalization in ASR and related speech-processing experiments.
 
 ---
 
@@ -64,7 +64,7 @@ The multi-view acoustic distance integrates **Voice Identity** (ECAPA-TDNN $35\%
 | **Sadda ↔ Tara** | 0.546 | 0.379 | 1.279 | MFCC Spectral + $F_0$ Pitch |
 | **Kavi ↔ Piya** | 0.554 | 0.549 | 0.935 | ECAPA-TDNN Embedding + MFCC Spectral |
 
-*In speaker verification, an ECAPA cosine distance $> 0.35$ indicates distinct speaker identities. Even the closest pair (`Gita ↔ Sara`, distance $0.503$) demonstrates clear acoustic separability.*
+*The ECAPA-TDNN embedding distances show substantial acoustic separation among the analyzed speakers. The closest pair in the combined acoustic analysis (Gita ↔ Sara; combined distance = 0.458) still exhibits measurable differences across the embedding, MFCC, pitch, and prosodic feature spaces. These distances should be interpreted as relative acoustic similarity within this dataset rather than as a universal speaker-verification threshold.*
 
 #### Most Distant Speaker Pairs
 | Pair | Combined Distance | Embedding Cosine Distance | MFCC Distance | Primary Evidence |
