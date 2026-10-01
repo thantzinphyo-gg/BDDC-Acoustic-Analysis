@@ -1,0 +1,14 @@
+Speaker,Voice Type,Median F0 (Hz),F0 Range (Hz),Speech Rate (syll/s),Median Duration (s),MFCC Position,Embedding Cluster
+Aksara,Male ,150.99,90.51,4.633,2.72,Spectral Group B,Cluster 3
+Dipa,Male ,149.43,74.93,5.288,2.08,Spectral Group A,Cluster 2
+Gita,Female (Test),273.98,166.61,5.625,4.32,Spectral Group B,Cluster 4
+Kavi,Male ,158.54,265.18,5.469,3.2,Spectral Group A,Cluster 1
+Nanda,Male (Test),319.88,287.15,5.357,3.2,Spectral Group A,Cluster 2
+Pasada,Female ,201.51,112.35,4.545,4.48,Spectral Group B,Cluster 3
+Piya,Male ,139.51,156.23,5.882,2.72,Spectral Group A,Cluster 2
+Sadda,Male ,210.73,278.27,5.0,3.04,Spectral Group B,Cluster 1
+Sara,Female ,284.36,222.87,5.556,4.16,Spectral Group B,Cluster 4
+Siri,Female ,170.31,129.38,5.729,2.08,Spectral Group A,Cluster 4
+Suta,Male ,138.36,229.05,5.804,2.08,Spectral Group A,Cluster 2
+Tara,Male ,134.9,336.94,5.04,3.36,Spectral Group A,Cluster 1
+Wasa,Female ,205.62,97.08,4.605,3.52,Spectral Group B,Cluster 3

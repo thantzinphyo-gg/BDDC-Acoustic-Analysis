@@ -1,0 +1,14 @@
+speaker_name,speaker_gender,total_utterances,total_duration_sec,total_duration_hours,mean_duration_sec,median_duration_sec,std_duration_sec,min_duration_sec,max_duration_sec,train_count,val_count,test_count,is_test_only
+Aksara,male,1000,3032.08,0.8422,3.032,2.72,1.403,1.12,10.88,900,100,0,False
+Dipa,male,1000,2129.92,0.5916,2.13,2.08,0.699,0.96,5.6,900,100,0,False
+Gita,female,879,3781.92,1.0505,4.303,4.32,1.218,1.28,8.64,0,0,879,True
+Kavi,male,879,2915.04,0.8097,3.316,3.2,1.138,1.12,9.44,791,88,0,False
+Nanda,male,682,2319.04,0.6442,3.4,3.2,1.186,1.12,8.64,0,0,682,True
+Pasada,female,398,1766.88,0.4908,4.439,4.48,1.447,1.6,8.8,358,40,0,False
+Piya,male,3953,11307.52,3.141,2.86,2.72,0.803,0.96,9.12,3558,395,0,False
+Sadda,male,1000,3126.56,0.8685,3.127,3.04,1.2,1.12,8.16,900,100,0,False
+Sara,female,1000,4062.24,1.1284,4.062,4.16,0.786,1.76,7.04,900,100,0,False
+Siri,female,1000,2218.46,0.6162,2.218,2.08,0.566,1.12,4.48,900,100,0,False
+Suta,male,704,1613.6,0.4482,2.292,2.08,1.052,0.96,8.48,634,70,0,False
+Tara,male,879,3152.16,0.8756,3.586,3.36,1.219,1.28,9.44,791,88,0,False
+Wasa,female,11186,39153.28,10.8759,3.5,3.52,0.857,0.8,6.88,10067,1119,0,False
